@@ -164,8 +164,9 @@ public class Solution {
 //        if (numRows == 1) return s;
 //        String ans = "";
 //        int i, j, k = 0, map[][], numColumns, length = s.length();
-//        numColumns = length < numRows? length : length / (2 * numRows - 2) * (numRows + 1)
-//                + (length % (2 * numRows - 2) > numRows ? length % (2 * numRows - 2) % numRows + 1 : 1);
+//        numColumns = length < numRows? length : length / (2 * numRows - 2) * (numRows - 1)
+//                + (length % (2 * numRows - 2) == 0 ? 0 : (length % (2 * numRows - 2) > numRows ?
+//                length % (2 * numRows - 2) - numRows + 1 : 1));
 //        map = new int[numRows][numColumns];
 //        for (i = 0; i < numRows; i++) {
 //            for (j = 0; j < numColumns; j++) {
